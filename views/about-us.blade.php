@@ -1,0 +1,224 @@
+@extends('layout')
+
+@section('content')
+<!--seccion about us home-->
+<section class="page-title">
+    <div class="page-title__contenedor">
+      <h5 class="text__pretitle text--light page-title__pretitle">
+        THE ULTIMATE LUXURY
+      </h5>
+      <h1 class="text__title text--light page-title__title">
+        About Us
+      </h1>
+      <div class="page-title__index-contenedor">
+        <div class="page-title__index">
+          <p class="text__page-card text--lightblack text__page-card--home">Home</p>
+          <p class="text__page-card text--lightblack">|</p>
+          <p class="text__page-card text--gold ">About</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--intro-->
+  <section class="introduccion">
+    <div class="introduccion__contenedor">
+      <video class="introduccion__video" controls autoplay muted loop>
+        <source src="./img/Home/Miranda-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h4 class="introduccion__subtitle text__subtitle--big">Hello. Our hotel has been present for over 20 years. We make the best for all our customers.</h4>
+            <div class="introduccion__icons">
+                <img src="./img/About/breakfast.svg" alt="breakfast-icon" class="introduccion__icon">
+              <div class="airplane__icon">
+                <img src="./img/About/airport.svg" alt="airport-icon" class="introduccion__icon" id="airport">
+                <p>AIRPORT PICKUP</p>
+              </div>
+                <img src="./img/About/city-guide.svg" alt="guide-icon" class="introduccion__icon">
+                <img src="./img/About/luxury-room.svg" alt="luxury-icon" class="introduccion__icon">
+            </div>
+            <div class="introduccion__card">
+              <div class="introduccion__card-img"></div>
+              <h5 class="introduccion__card-pretitle text__paragraph text--gray">RESTAURANT</h5>
+              <h3 class="introduccion__card-title text__card-title text--lightblack">Get Restaurant Facilities &amp Many Other More</h3>
+              <p class="introduccion__card-paragraph text__card-paragraph text--gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+              <button class="introduccion__card-button button button--golden button--book">TAKE A TOUR</button>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!--core features-->
+  <section class="core-features core-features--dark">
+    <h5 class="text__pretitle text--light text--center core-features__pretitle">FACILITIES</h5>
+    <h1 class="text__title text--center core-features__title text--light">Core Features</h1>
+    <div class="swiper swiper__core-features--dark">
+      <div class="swiper-wrapper core-features__slider core-features__slider--dark ">
+        <div class="swiper-slide core-features__slide core-features__slide--dark">
+          <img
+            class="core-features_number-icon core-features_number-icon--dark"
+            src="./img/About/features/01 2.svg"
+            alt=""
+          />
+          <div class="core-features__slide-info">
+            <img
+              class="core-features__icon"
+              src="./img/Home/rating.svg"
+              alt=""
+            />
+            <h4 class="text__subtitle core-features__slide-title text--light">
+              Have High Rating
+            </h4>
+            <p class="text__paragraph text--light">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide core-features__slide core-features__slide--dark">
+          <img
+            class="core-features_number-icon core-features_number-icon--dark"
+            src="./img/About/features/02.svg"
+            alt=""
+          />
+          <div class="core-features__slide-info">
+            <img
+              class="core-features__icon"
+              src="./img/Home/hours.svg"
+              alt=""
+            />
+            <h4 class="text__subtitle core-features__slide-title text--light">
+              Quiet Hours
+            </h4>
+            <p class="text__paragraph text--light">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide core-features__slide core-features__slide--dark">
+          <img
+            class="core-features_number-icon core-features_number-icon--dark"
+            src="./img/About/features/03.svg"
+            alt=""
+          />
+          <div class="core-features__slide-info">
+            <img
+              class="core-features__icon"
+              src="./img/Home/location.svg"
+              alt=""
+            />
+            <h4 class="text__subtitle core-features__slide-title text--light">
+              Best Locations
+            </h4>
+            <p class="text__paragraph text--light">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide core-features__slide core-features__slide--dark">
+          <img
+            class="core-features_number-icon core-features_number-icon--dark"
+            src="./img/About/features/04.svg"
+            alt=""
+          />
+          <div class="core-features__slide-info">
+            <img
+              class="core-features__icon"
+              src="./img/Home/cancelation.svg"
+              alt=""
+            />
+            <h4 class="text__subtitle core-features__slide-title text--light">
+             Free Cancellation
+            </h4>
+            <p class="text__paragraph text--light">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide core-features__slide core-features__slide--dark">
+          <img
+            class="core-features_number-icon core-features_number-icon--dark"
+            src="./img/About/features/05.svg"
+            alt=""
+          />
+          <div class="core-features__slide-info">
+            <img
+              class="core-features__icon"
+              src="./img/Home/payment.svg"
+              alt=""
+            />
+            <h4 class="text__subtitle core-features__slide-title text--light">
+              Payment Options
+            </h4>
+            <p class="text__paragraph text--light">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide core-features__slide core-features__slide--dark">
+          <img
+            class="core-features_number-icon core-features_number-icon--dark"
+            src="./img/About/features/06.svg"
+            alt=""
+          />
+          <div class="core-features__slide-info">
+            <img
+              class="core-features__icon"
+              src="./img/Home/offers.svg"
+              alt=""
+            />
+            <h4 class="text__subtitle core-features__slide-title text--light">
+              Special Offers
+            </h4>
+            <p class="text__paragraph text--light">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination swiper-pagination__core-features--dark swiper"></div>
+    </div>    
+  </section>
+  <!--Seccion Counter-->
+  <section class="counter">
+    <div class="counter__contenedor">
+      <h5 class="text__pretitle text--gray counter__contenedor-pretitle">
+        COUNTER
+      </h5>
+      <h1 class="text__title text--black counter__contenedor-title">
+        Some Fun Facts
+      </h1>
+      <div class="counter__contenedor--facts">
+        <div class="facts">
+          <img src="./img/About/counter/happy.svg" alt="happy">
+          <img src="./img/About/counter/8000 Happy Users.svg" alt="users">
+          <img src="./img/About/counter/flecha.svg" alt="">
+        </div>
+        <div class="facts">
+          <img src="./img/About/counter/reviews.svg" alt="reviews">
+          <img src="./img/About/counter/10M Reviews & Appriciate.svg" alt="appriciate">
+          <img src="./img/About/counter/flecha.svg" alt="">
+        </div>
+        <div class="facts">
+          <img src="./img/About/counter/coverage.svg" alt="coverage">
+          <img src="./img/About/counter/100 Country Coverage.svg" alt="country">
+          <img src="./img/About/counter/flecha.svg" alt="">
+        </div>
+      </div>
+      <div class="swiper swiper__fun-facts__slider">
+        <div class="swiper-wrapper fun-facts__slider">
+            <div class="swiper-slide fun-facts__slide">
+              <img src="./img/About/counter/counter-slide1.jpg" alt="fun facts img" class="fun-facts__slider--img">
+            </div>
+            <div class="swiper-slide fun-facts__slide">
+              <img src="./img/About/counter/counter-slide2.jpg" alt="fun facts img" class="fun-facts__slider--img">
+            </div>      
+        </div>
+        <div class="swiper-pagination swiper-pagination--fun-facts swiper"></div>
+      </div>
+    </div>
+  </section>
+  @endsection
