@@ -16,6 +16,7 @@
 }
 .about-us__title {
   margin-bottom: 16px;
+  max-width: 397px;
 }
 
 .about-us__cards {
@@ -28,18 +29,23 @@
   padding-left: 14%;
   padding-right: 14%;
 }
-.introduccion__card {
-  margin-bottom: 80px;
-}
-.about-us__card--team {
+
+.about-us__card {
   background-color: #ffffff;
   width: 270px;
   z-index: 0;
 }
+.about-us__card-img {
+  background-color: #e4e4e4;
+  height: 300px;
+}
 
 .about-us__card--itemteam {
-  height: 300px;
   background-image: url("./img/Home/hotelcrew.jpg");
+  background-size: cover;
+}
+.about-us__card--itemlux {
+  background-image: url("./img/Home/luxury-room-home.jpg");
   background-size: cover;
 }
 .about-us__card--text {
@@ -76,9 +82,59 @@
   background-color: #222;
 }
 
-.about-us__card--itemlux {
-  height: 300px;
-  background-image: url("./img/Home/luxury-room-home.jpg");
-  background-size: cover;
-}
+@media (min-width: 1300px) {
+  .about-us {
+    position: unset;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .about-us__container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 4rem;
+  }
 
+  .about-us__cards {
+    position: absolute;
+    flex-direction: row;
+    gap: 1.5rem;
+    top: 0;
+    left: 15%;
+    padding-left: 0;
+    padding-right: 0;
+    width: 50vw;
+  }
+  .about-us__card {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+  }
+  .intro__about-us {
+    right: 0;
+    position: absolute;
+    width: 55vw;
+    height: 60%;
+    top: 30%;
+    padding-bottom: 200px;
+    padding-left: 200px;
+    padding-right: 15%;
+  }
+
+  .about-us__card--team {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about-us__card--luxury {
+    margin-top: 4rem;
+  }
+  .about-us__pretitle {
+    position: absolute;
+    top: -50px;
+  }
+}

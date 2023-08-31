@@ -1,6 +1,9 @@
 .intro {
   background-color: #333;
   padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .intro__perfect-base {
@@ -8,6 +11,15 @@
   padding-right: 8%;
   padding-top: 75px;
   padding-bottom: 76px;
+  backdrop-filter: blur(3px);
+  backdrop-filter: brightness(80%);
+}
+.intro__perfect-base--container {
+  //background-image: url("../../../assets/home/patrick-robert-doyle-AH8zKXqFITA-unsplash.jpg");
+  background-size: cover;
+  background-position: 10%;
+  background-repeat: no-repeat;
+  height: 60%;
 }
 .intro__pretitle {
   margin-bottom: 40px;
