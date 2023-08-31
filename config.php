@@ -1,6 +1,6 @@
 <?php
 $host="localhost";
-$BD="miranda";
+$BD="hotel-miranda";
 $usuario="root";
 $contrasenia="";
 
