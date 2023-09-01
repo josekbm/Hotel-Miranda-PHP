@@ -1,11 +1,12 @@
 <?php
 $host="localhost";
-$BD="hotel-miranda";
-$usuario="root";
-$contrasenia="";
-
+$username="root";
+$password="";
+$database="hotel-miranda";
 try {
-        $conexion=new PDO("mysql:host=$host;dbname=$BD" ,$usuario,$contrasenia);
+    $mysqli = new mysqli($host, $username, $password, $database);
+    $mysqli->select_db($database) or die( "Unable to select database");
+    $mysqli->close();
        
 } catch ( Exception $ex) {
     
@@ -13,3 +14,5 @@ try {
 
 }
 ?>
+
+

@@ -402,7 +402,7 @@
 
 @media (min-width: 1300px) {
   .about-us {
-    position: relative;
+    position: unset;
     padding-top: 4rem;
     margin-bottom: 4rem;
     height: 100vh;

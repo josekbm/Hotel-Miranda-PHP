@@ -8,7 +8,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
   />
-  <title>Hotel Miranda | HOME</title>
+  <title>@yield('title')</title>
 </head>
 <body>
   <!--Header-->
@@ -58,8 +58,9 @@
     </nav>
   </header>
 
-  
+  <main>
     @yield('content')
+  </main>
   
 
   <!--FOOTER-->
