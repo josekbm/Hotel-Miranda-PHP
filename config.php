@@ -2,7 +2,7 @@
 $host="localhost";
 $username="root";
 $password="";
-$database="hotel-miranda";
+$database="miranda_db";
 try {
     $mysqli = new mysqli($host, $username, $password, $database);
     $mysqli->select_db($database) or die( "Unable to select database");
